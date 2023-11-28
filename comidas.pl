@@ -6,6 +6,10 @@ receta(pasta, [tomate, pasta, hierbas]).
 receta(ensalada, [lechuga, tomate, cebolla]).
 receta(sopa, [pollo, zanahoria, papa]).
 receta(huevos, [huevo, mantequilla]).
+receta(tacos, ['carne asada', cebolla, cilantro, 'tortillas de maíz']).
+receta(pizza, ['masa para pizza', tomate, queso, pepperoni]).
+receta(tostadas_con_aguacate, ['pan tostado', aguacate, tomate, cilantro, sal]).
+receta(ensalada_de_quinoa, [quinoa, espinacas,'tomate cereza', aguacate, nueces, aderezo]).
 
 % Definir las instrucciones de preparación
 instrucciones(pasta, [
@@ -38,6 +42,46 @@ instrucciones(huevos, [
     '3. Vierte los huevos batidos en la sartén caliente.',
     '4. Cocina a fuego medio, revolviendo ocasionalmente, hasta que los huevos estén bien cocidos.',
     '5. Sirve caliente y disfruta.'
+]).
+
+instrucciones(tacos, [
+    '1. Asa la carne en una parrilla hasta que esté bien cocida.',
+    '2. Corta la carne en tiras delgadas.',
+    '3. Pica finamente la cebolla y el cilantro.',
+    '4. Calienta las tortillas de maíz en un comal o sartén.',
+    '5. Arma los tacos colocando la carne asada, cebolla y cilantro en las tortillas.',
+    '6. ¡Sirve y disfruta tus tacos!'
+]).
+
+instrucciones(pizza, [
+    '1. Extiende la masa de pizza en una bandeja para horno.',
+    '2. Haz una salsa de tomate: pica los tomates y cocina a fuego lento hasta obtener una consistencia de salsa.',
+    '3. Unta la salsa de tomate sobre la masa de pizza.',
+    '4. Espolvorea generosamente queso sobre la salsa de tomate.',
+    '5. Coloca rodajas de pepperoni (u otros ingredientes de tu elección) sobre el queso.',
+    '6. Hornea en el horno precalentado a 220°C hasta que la masa esté dorada y el queso burbujeante.',
+    '7. ¡Saca la pizza del horno y disfruta!'
+]).
+
+instrucciones(tostadas_con_aguacate, [
+    '1. Tuesta rebanadas de pan hasta que estén doradas y crujientes.',
+    '2. Pela y aplasta el aguacate con un tenedor en un tazón.',
+    '3. Unta el aguacate sobre las rebanadas de pan tostado.',
+    '4. Corta tomates en rodajas finas y colócalos sobre el aguacate.',
+    '5. Picar cilantro fresco y espolvorear sobre las tostadas.',
+    '6. Añade un toque de sal al gusto.',
+    '7. ¡Sirve y disfruta tus deliciosas tostadas de aguacate!'
+]).
+
+instrucciones(ensalada_de_quinoa, [
+    '1. Enjuaga la quinoa bajo agua fría y cocina según las instrucciones del paquete.',
+    '2. Lava y corta las espinacas en trozos manejables.',
+    '3. Corta los tomates cherry por la mitad.',
+    '4. Pela y corta el aguacate en cubos.',
+    '5. Tuesta las nueces en una sartén hasta que estén doradas.',
+    '6. En un tazón grande, mezcla la quinoa cocida, espinacas, tomates cherry, aguacate y nueces.',
+    '7. Agrega tu aderezo favorito y mezcla bien.',
+    '8. ¡Sirve y disfruta de esta nutritiva ensalada de quinoa!'
 ]).
 
 % Crear la interfaz gráfica
