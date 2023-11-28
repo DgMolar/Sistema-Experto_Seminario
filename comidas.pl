@@ -10,6 +10,10 @@ receta(tacos, ['carne asada', cebolla, cilantro, 'tortillas de maíz']).
 receta(pizza, ['masa para pizza', tomate, queso, pepperoni]).
 receta(tostadas_con_aguacate, ['pan tostado', aguacate, tomate, cilantro, sal]).
 receta(ensalada_de_quinoa, [quinoa, espinacas,'tomate cereza', aguacate, nueces, aderezo]).
+receta(pancake_chocobanana, [avena, platano, huevo, chocolate, leche]).
+receta(bolas_de_papa_crispy, [papa, maizena, parmesano, perejil]).
+receta(pescado_empapelado, ['filete de pescado', cebolla, pimientos, tomate, espinaca, mantequilla]).
+receta(crema_de_brocoli, [brocoli, leche]).
 
 % Definir las instrucciones de preparación
 instrucciones(pasta, [
@@ -82,6 +86,46 @@ instrucciones(ensalada_de_quinoa, [
     '6. En un tazón grande, mezcla la quinoa cocida, espinacas, tomates cherry, aguacate y nueces.',
     '7. Agrega tu aderezo favorito y mezcla bien.',
     '8. ¡Sirve y disfruta de esta nutritiva ensalada de quinoa!'
+]).
+
+instrucciones(pancake_chocobanana, [
+    '1. Pela 1/2 de plátano y agregalo a una licuadora. ',
+    '2. Agrega a la licuadora 1/2 taza de avena . ',
+    '3. Incorpora 1/4 de taza de leche y 1 huevo a la licuadora. ',
+    '4. Añade 1/4 de cucharada de polvo para hornear y licúa todos los ingredientes. ',
+    '5. Vierte sobre un tazon pequeño y añade chispas de chocolate. ',
+    '6. Lleva al horno por 20 - 25 minutos a 350° F. ',
+    '7. Disfruta de este rico postre saludable'
+]).
+
+instrucciones(bolas_de_papa_crispy, [
+    '1. Cocer las papas. ',
+    '2. Machacar las papas en un bowl hasta formar un pure. ',
+    '3. Añadir dos cucharadas de maizena al pure. ',
+    '4. Sazonar con sal, pimienta, perejil y queso parmesano. ',
+    '5. Mezclar hasta formar una masa y hacer bolitas pequeñas',
+    '6. Freir las bolas de papa en aceite caliente hasta que cambien de color a cafe. '
+    '7. Sazonar con mas queso, sal y pimienta. ',
+    '8. Disfruta de estas deliciosas bolitas de papa cruji!'
+]).
+
+instrucciones(pescado_empapelado, [
+'1. Cortar la cebolla y los pimientos en julianas. ',
+'2. Cortar el tomate en rodajas. ',
+'3. Cortar trozos de aluminio rectangulares en los que quepan el filete de pescado de forma que se puedan envolver. ',
+'4. A los trozos de aluminio embarrar una ligera capa de mantequilla y sazonar con sal, pimienta, ajo en polvo y opcional si tienes pimienta-limon. ',
+'5. Colocar el filete de pescado sobre el aluminio y sazonar con sal, pimienta, ajo en polvo y aceite de olivo. ',
+'6. Sobre el pescado colocar las rodajas de tomate, las espinacas y las julianas de la cebolla y los pimientos. ',
+'7. Envolver y llevar a un sarten con agua caliente de 5 - 10 minutos por lado. ',
+'8. Disfruta de este delicioso pescado empapelado'
+]).
+
+instrucciones (crema_de_brocoli, [
+'1. Hierve un brócoli grande o bien 2 tazas de brócoli. ',
+'2. Licúa el brócoli junto con 1/4 taza de leche y 1/2 taza del agua que usaste para hervir el brócoli. ',
+'3. Lleva la mezcla a una olla a fuego medio por 5 minutos o hasta que la leche espese un poco. Remueva constantemente. ',
+'4. Sazona con sal, pimienta, caldo de pollo en polvo. Opcional agrega una cucharada de maizena para espesar. ',
+'5. Sirve, decora y disfruta de este delicioso y sencillo platillo. '
 ]).
 
 % Crear la interfaz gráfica
